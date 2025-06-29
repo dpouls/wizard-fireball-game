@@ -1,0 +1,186 @@
+body,
+html {
+  margin: 0;
+  padding: 20;
+  /* cursor: url("/tankModule/assets/crosshair.png"), auto; */
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  background: black;
+}
+
+#gameContainer {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#gameContainer canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.bg-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: saturate(0.75);
+  pointer-events: none;
+  object-fit: cover;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: rgba(238, 238, 238, 0.875);
+  padding: 40px;
+  padding-top: 60px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 80%;
+  width: 85%;
+}
+.content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: rgba(238, 238, 238, 0.875);
+  padding: 40px;
+  padding-top: 60px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 85%;
+}
+#profile-img {
+  opacity: 1;
+  height: 300px;
+  /* width: 20%; */
+  object-fit: cover;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.title {
+  display: block;
+  font-size: 4em;
+  text-align: center;
+  /* margin-top: 30px; */
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.description {
+  display: block;
+  /* width: 100%; */
+  max-width: 500px;
+  text-align: center;
+  margin: 10px;
+  font-size: 1.2em;
+  opacity: 1;
+}
+/* .tank-component {
+  position: absolute;
+} */
+/* 
+#booster {
+  position: absolute;
+  bottom: -30px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px; 
+  z-index: -1;
+} */
+.project {
+  width: 80%;
+}
+.project-description {
+  display: block;
+  text-align: center;
+  margin: 10px;
+  font-size: 1.2em;
+  opacity: 1;
+}
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  height: 80vh;
+  width: 100vw;
+}
+.carousel-container {
+  position: relative;
+  width: 100%;
+  /* max-width: 600px; Adjust as needed */
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+.bc-app-carousel {
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+  }
+  .content-section {
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+  }
+}
